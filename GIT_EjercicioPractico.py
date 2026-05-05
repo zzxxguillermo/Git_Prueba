@@ -11,5 +11,6 @@ if numero != 0:
 else:
     print("El número es 0")
     # Mi primer codigo en GIT
+    # estamos en otra rama, para probar el merge, y ver si se sube a la rama principal, para luego hacer un pull request.
     
     
