@@ -11,6 +11,11 @@ def aplicar_iva(precio_base):
     precio_final = precio_base + impuesto
     return precio_final  # Devolvemos el total para usarlo afuera
 
+#aplicar iva al 50%
+def aplicar_iva_50(precio_base):
+    impuesto = precio_base * 0.50
+    precio_final = precio_base + impuesto
+    return precio_final  
 # 1. FInalizan Funciones
 
 
@@ -22,7 +27,9 @@ monto = float(input("Ingrese el precio del producto: $"))
 
 # Llamamos a la función pasando el monto ingresado y guardamos el resultado
 total_a_cobrar = aplicar_iva(monto)
+total_a_cobrar_2 = aplicar_iva_50(monto)
 
 # Mostramos el resultado final en la terminal
 # El :.2f sirve para formatear el texto y mostrar solo 2 decimales (centavos)
 print(f"El precio final con IVA es: ${total_a_cobrar:.2f}")
+print(f"El precio final con IVA es: ${total_a_cobrar_2:.2f}")
