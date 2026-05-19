@@ -26,3 +26,32 @@ total_a_cobrar = aplicar_iva(monto)
 # Mostramos el resultado final en la terminal
 # El :.2f sirve para formatear el texto y mostrar solo 2 decimales (centavos)
 print(f"El precio final con IVA es: ${total_a_cobrar:.2f}")
+
+
+# ==========================================
+#Iva al a10 %
+
+def aplicar_iva_10(precio_base2):
+    impuesto2 = precio_base2 * 0.10
+    precio_final2 = precio_base2 + impuesto2
+    return precio_final2  # Devolvemos el total para usarlo afuera
+
+# 1. FInalizan Funciones
+
+
+# 2. Programa Principal
+print("--- CALCULADORA DE IVA ---")
+
+# Pedimos el dato (usamos float para que acepte números con decimales)
+monto2 = float(input("Ingrese el precio del producto: $"))
+
+# Llamamos a la función pasando el monto ingresado y guardamos el resultado
+total_a_cobrar2 = aplicar_iva_10(monto2)
+
+# Mostramos el resultado final en la terminal
+# El :.2f sirve para formatear el texto y mostrar solo 2 decimales (centavos)
+print(f"El precio final con IVA es: ${total_a_cobrar2:.2f}")
+
+
+
+    
